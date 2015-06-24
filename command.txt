@@ -8,7 +8,7 @@ Add to repo
 Remove a file
 git rm [filename]
 
-Rename 
+Rename and move 
 git mv [old filename] space [new filename]
 
 Status 
