@@ -9,7 +9,7 @@ Remove a file
 git rm [filename]
 
 Rename 
-git mv [old filename] to [new filename]
+git mv [old filename] space [new filename]
 
 Status 
 git status
