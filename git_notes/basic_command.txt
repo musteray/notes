@@ -3,7 +3,12 @@ Create a git local repo
 
 Add to repo
 1. Git add . or git add [filename]
-2. Git commit -m "Your message here"
+2. Git commit -m "Your message here" 
+or 
+3. Git commit -am "Your message here" - When to use when simple changes
+
+Checkout - get a specific file in your repo
+git checkout -- [filename]
 
 Remove a file
 git rm [filename]
