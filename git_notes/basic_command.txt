@@ -1,4 +1,4 @@
-Create a git local repo
+Create a git repo
 1. Git init 
 
 Add to repo
@@ -33,3 +33,7 @@ Compare stage file to git local repo
 Log 
 1.git log
 1.git log --author="Specific name you want to see the log"
+
+Add remote[GitHub or BitBucket]
+1.git remote add [nickname] [http url]
+1.git remote - check the remote list
