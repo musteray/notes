@@ -8,23 +8,26 @@ or
 3. Git commit -am "Your message here" - When to use when simple changes
 
 Checkout - get a specific file in your repo
-git checkout -- [filename]
+1.git checkout -- [filename]
+
+Unstage file
+1.git reset HEAD [filename] -> remove in the stage area
 
 Remove a file
-git rm [filename]
+1.git rm [filename]
 
 Rename and move 
-git mv [old filename] space [new filename]
+1.git mv [old filename] space [new filename]
 
 Status 
-git status
+1.git status
 
 Compare local to git local repo
-Git diff 
+1.Git diff 
 
 Compare stage file to git local repo
-git diff --staged
+1.git diff --staged
 
 Log 
-git log
-git log --author="Specific name you want to see the log"
+1.git log
+1.git log --author="Specific name you want to see the log"
