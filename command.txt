@@ -1,0 +1,22 @@
+Create a git local repo
+1. Git init 
+
+Add to repo
+1. Git add . or git add [filename]
+2. Git commit -m "Your message here"
+
+Remove a file
+git rm [filename]
+
+Status 
+git status
+
+Compare local to git local repo
+Git diff 
+
+Compare stage file to git local repo
+git diff --staged
+
+Log 
+git log
+git log --author="Specific name you want to see the log"
