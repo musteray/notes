@@ -34,6 +34,9 @@ Log
 1.git log
 1.git log --author="Specific name you want to see the log"
 
-Add remote[GitHub or BitBucket]
-1.git remote add [nickname] [http url]
+Add remote [GitHub or BitBucket]
+1.git remote add [remotename] [http url]
 1.git remote - check the remote list
+
+Push in [GitHub or BitBucket]
+1.git push -u [remotename] master -> push to [GitHub or BitBucket] but also delete in your local repo.
