@@ -8,7 +8,9 @@ or
 3. Git commit -am "Your message here" - When to use when simple changes
 
 Checkout - get a specific file in your repo
-1.git checkout -- [filename]
+1.git checkout -- [filename] 
+or 
+2.git checkout [logname] -- [filename]
 
 Unstage file
 1.git reset HEAD [filename] -> remove in the stage area
