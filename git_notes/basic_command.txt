@@ -24,10 +24,10 @@ Rename and move
 Status 
 1.git status
 
-Compare local to git local repo
+Compare local to git repo
 1.git diff 
 
-Compare stage file to git local repo
+Compare stage file to git repo
 1.git diff --staged
 
 Log 
