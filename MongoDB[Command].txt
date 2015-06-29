@@ -18,4 +18,21 @@ db.[collectionName].remove({}) -> remove all
 db.COLLECTION_NAME.find().limit(NUMBER) -> display how many document
 db.COLLECTION_NAME.find().skip(NUMBER) -> skip of how many you want
 db.COLLECTION_NAME.find().sort({"":-1 or 1}) -> Sort in ascending or descending
-db.mycol.ensureIndex({"title":1}) -> Create index
+db.mycol.ensureIndex({"title":1}) -> Create index is good for query
+db.COLLECTION_NAME.aggregate([
+			       {$match: {document.name:"[value]"}},
+			       {$group: {nameyouwant:"$[document.name]"}}
+			     ]) -> Group by and count in sql 
+---------------- Aggregate Only ------------------------
+Possible stages in aggregation framework are following:
+$project: Used to select some specific fields from a collection.
+$match: This is a filtering operation and thus this can reduce the amount of documents that are given as input to the next stage.
+$group: This does the actual aggregation as discussed above.
+$sort: Sorts the documents.
+$skip: With this it is possible to skip forward in the list of documents for a given amount of documents.
+$limit: This limits the amount of documents to look at by the given number starting from the current position.s
+$unwind: This is used to unwind document that are using arrays. when using an array the data is kind of pre-joinded and this operation will be undone with this to have individual documents again. Thus with this stage we will increase the amount of documents for the next stage.
+------------------------------------------------------------
+
+
+
