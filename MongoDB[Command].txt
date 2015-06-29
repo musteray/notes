@@ -1,0 +1,21 @@
+use [dbname] -> create or switch to that db
+show dbs -> list of all database
+show collections -> list of all collection/table
+db.stats() -> Sizes/Capacity of all database
+db.dropDatabase() -> drop the current database
+db -> show the name of the database
+db.createCollection('nameOfCollection')
+db.[collectionName].drop()
+db.[collectionName].insert(document) or db.[collectionName].save(document)
+db.[collectionName].find().pretty() or db.[collectionName].find()
+db.[collectionName].find({},{"":1,_id:0}) -> Display only one 
+db.[collectionName].find({"":"","":""}).pretty() -> AND Query
+db.[collectionName].find({$or:[{"":""},{"":""}]}).pretty() -> OR Query
+db.[collectionName].find({"":{$[lt,lte,gt,gte,ne]:<value>}}).pretty() -> Less Than
+db.[collectionName].update({"":""},{$set:{"":""}},{multi:true}) -> Update multiple
+db.[collectionName].remove({"":""}) -> remove one
+db.[collectionName].remove({}) -> remove all
+db.COLLECTION_NAME.find().limit(NUMBER) -> display how many document
+db.COLLECTION_NAME.find().skip(NUMBER) -> skip of how many you want
+db.COLLECTION_NAME.find().sort({"":-1 or 1}) -> Sort in ascending or descending
+db.mycol.ensureIndex({"title":1}) -> Create index
